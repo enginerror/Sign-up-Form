@@ -88,7 +88,7 @@ body {
 
 h3 {
     font-size: 16px;
-    color: #224A53;
+    color: var(--buttonColor);
 }
 
 #form {
@@ -117,6 +117,13 @@ input:focus {
     border: 1px solid var(--correctInput);
 }
 
+#passwordAlert {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--wrongInput);
+    /* display: none; */
+}
+
 .btn-area {
     display: flex;
     position: relative;
@@ -127,9 +134,9 @@ input:focus {
     #submit-btn {
         padding: 8px;
         border-radius: 5px;
-        background-color: #224A53;
+        background-color: var(--buttonColor);
         border: none;
-        color: #F9FAFB;
+        color: var(--bgColor);
         font-weight: 600;
     }
     #submit-btn:hover {
@@ -140,7 +147,7 @@ input:focus {
         a {
             text-decoration: none;
             font-weight: 600;
-            color: #224A53;
+            color: var(--buttonColor);
         }
     }
 }
