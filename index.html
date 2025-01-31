@@ -11,9 +11,11 @@
 
                <!-- backgroung image section -->
 
-    <div class="background-img-section">
-        <img src="./public/odin-lined.png" alt="">
-        <p id="logo">ODIN</p>
+    <div class="background-section">
+        <div class="background-logo-section">
+            <img src="./public/odin-lined.png" alt="Logo Image" id="logo-image">
+            <p id="logo-text">ODIN</p>
+        </div>
     </div>
 
                <!-- from section -->
@@ -31,36 +33,38 @@
 
         <div class="form-main-section">
             <h3>Let's do this!</h3>
-            <form action="#">
-                <div>
+            <form action="#" id="form">
+                <div class="inputDiv">
                     <label for="first_name">First Name</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div>
+                <div class="inputDiv">
                     <label for="last_name">Last Name</label>
-                    <input type="text">
+                    <input type="text" required>
                 </div>
-                <div>
+                <div class="inputDiv">
                     <label for="user_email">Email</label>
-                    <input type="email">
+                    <input type="email" required>
                 </div>
-                <div>
+                <div class="inputDiv">
                     <label for="phone_number">Phone Number</label>
-                    <input type="tel">
+                    <input type="tel" required>
                 </div>
-                <div>
+                <div class="inputDiv">
                     <label for="password">Password</label>
-                    <input type="password">
+                    <input type="password" required>
                 </div>
-                <div>
+                <div class="inputDiv">
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="password">
+                    <input type="password" required>
+                </div>
+
+                <div class="btn-area">
+                    <button type="submit" id="submit-btn">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
                 </div>
             </form>
         </div>
-
-        <button type="submit">Create Account</button>
-        <p>Already have an account? <a href="#">Log in</a></p>
     </div>
 
     <script src="script.js"></script>

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: "Outfit", serif;
+    display: flex;
+}
+
+:root {
+    --buttonColor: #224A53;
+    --correctInput: #0e459d;
+    --wrongInput: #c30808;
+    --bgColor: #F9FAFB;
+    --logoColor: #ffff;
+    --inputBorder: #cfcfcf;
+}
+
+@font-face {
+    font-family: Norse-bold;
+    src: url(./Norse-Bold.otf);
+}
+
+        /* -- backgroung image section -- */
+
+.background-section {
+    background: url(./public/bg-image.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 39vw;
+    background-size: 100%;
+    .background-logo-section {
+        height: 24vh;
+        background-color: #0000004f;
+        position: relative;
+        top: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        #logo-image {
+            height: 120px;
+        }
+        #logo-text {
+            font-size: 90px;
+            font-family: Norse-bold;
+            color: var(--logoColor);
+        }
+    }
+}
+
+        /* -- from section -- */
+
+.form-section {
+    height: 100vh;
+    width: 61vw;
+    background-color: var(--bgColor);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.from-text-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    padding: 0 60px;
+    gap: 15px;
+    .form-main-text, .form-sub-text {
+        font-size: 15px;
+    }
+}
+
+.form-main-section {
+    height: 45vh;
+    background-color: var(--logoColor);
+    box-shadow: 2px 2px 5px 0px #f1f1f1;
+    padding: 15px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    color: #224A53;
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 65px;
+}
+.inputDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+label {
+    font-size: 12px;
+}
+input {
+    height: 30px;
+    width: 250px;
+    border: 1px solid var(--inputBorder);
+    background-color: var(--bgColor);
+    border-radius: 15px;
+    padding: 15px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid var(--correctInput);
+}
+
+.btn-area {
+    display: flex;
+    position: relative;
+    top: 25px;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    #submit-btn {
+        padding: 8px;
+        border-radius: 5px;
+        background-color: #224A53;
+        border: none;
+        color: #F9FAFB;
+        font-weight: 600;
+    }
+    #submit-btn:hover {
+        background-color: #356e7d;
+    }
+    p {
+        font-size: 12px;
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #224A53;
+        }
+    }
+}
