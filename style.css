@@ -117,11 +117,18 @@ input:focus {
     border: 1px solid var(--correctInput);
 }
 
-#passwordAlert {
+/* #password, #confirm_password {
+    border: 1px solid var(--wrongInput);
+} */
+
+.passwordAlert {
     font-size: 10px;
     font-weight: 400;
     color: var(--wrongInput);
     /* display: none; */
+}
+.visible {
+    visibility: visible;
 }
 
 .btn-area {

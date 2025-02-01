@@ -1,19 +1,13 @@
 const password = document.querySelector("#password");
-const confirmPassword = document.querySelector("#confirm_password");
+const confirm_password = document.querySelector("#confirm_password");
+const passwordAlert = document.querySelector(".passwordAlert");
 
-const submitBtn = document.querySelector("#submit-btn");
-const passwordAlert = document.querySelector("#passwordAlert");
+let password1 = password.value;
+let password2 = confirm_password.value;
 
-submitBtn.addEventListener("click", (e) => {
-    
-    const password1 = password.value;
-    const password2 = confirmPassword.value
-    if(password1 === password2) {
-        e.preventDefault();
-        alert("Account Created");
-    }
-    else {
-        passwordAlert.style.display = "";
-        password.style
-    }
-});
+if(password1 === password2) {
+    // alert("Account Created");
+    passwordAlert.classList.remove("visible")
+}
+else {
+}
